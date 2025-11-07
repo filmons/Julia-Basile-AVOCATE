@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta SEO essentiels -->
+  <meta name="description" content="Julia Basile, avocate au barreau de Paris. Expertise en droit pénal international, droits humains et compétence universelle. Défense devant les instances internationales.">
+  <meta name="keywords" content="avocat Paris, droit pénal international, droits humains, compétence universelle, Cour européenne droits de l'homme, droit international humanitaire, Julia Basile">
+  <meta name="author" content="Julia Basile">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="French">
+  <meta name="revisit-after" content="7 days">
+
+  <title>Julia Basile - Avocate | Droit Pénal International & Droits Humains - Paris</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.jb-avocate.fr/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.jb-avocate.fr/">
+  <meta property="og:title" content="Julia Basile - Avocate | Droit Pénal International & Droits Humains">
+  <meta property="og:description" content="Avocate au barreau de Paris spécialisée en droit pénal international, droits humains et compétence universelle. Expertise reconnue devant les instances internationales.">
+  <meta property="og:image" content="https://www.jb-avocate.fr/assets/img/Julia_Basile_logo.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Julia Basile - Avocate">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.jb-avocate.fr/">
+  <meta name="twitter:title" content="Julia Basile - Avocate | Droit Pénal International & Droits Humains">
+  <meta name="twitter:description" content="Avocate au barreau de Paris spécialisée en droit pénal international, droits humains et compétence universelle.">
+  <meta name="twitter:image" content="https://www.jb-avocate.fr/assets/img/Julia_Basile_logo.png">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="FR-75">
+  <meta name="geo.placename" content="Paris">
+  <meta name="geo.position" content="48.8566;2.3522">
+  <meta name="ICBM" content="48.8566, 2.3522">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Julia_Basile_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Julia_Basile_logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/Julia_Basile_logo.png">
+  <link rel="shortcut icon" href="assets/img/Julia_Basile_logo.png">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Leaflet CSS pour la carte -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- AOS - Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Schema.org JSON-LD pour SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Attorney",
+        "@id": "https://www.jb-avocate.fr/#attorney",
+        "name": "Julia Basile",
+        "url": "https://www.jb-avocate.fr",
+        "image": "https://www.jb-avocate.fr/assets/img/Julia_Basile_logo.png",
+        "description": "Avocate au barreau de Paris spécialisée en droit pénal international, droits humains et compétence universelle",
+        "jobTitle": "Avocate",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Barreau de Paris"
+        },
+        "knowsAbout": [
+          "Droit pénal international",
+          "Droits humains",
+          "Compétence universelle",
+          "Droit international humanitaire",
+          "Cour européenne des droits de l'homme"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Avenue de la Justice",
+          "addressLocality": "Paris",
+          "postalCode": "75008",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33123456789",
+        "email": "contact@jb-avocate.fr",
+        "sameAs": [
+          "https://www.linkedin.com/in/julia-basile",
+          "https://twitter.com/juliabasile"
+        ]
+      },
+      {
+        "@type": "LegalService",
+        "@id": "https://www.jb-avocate.fr/#legalservice",
+        "name": "Cabinet Julia Basile - Avocate",
+        "image": "https://www.jb-avocate.fr/assets/img/Julia_Basile_logo.png",
+        "url": "https://www.jb-avocate.fr",
+        "telephone": "+33123456789",
+        "email": "contact@jb-avocate.fr",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Avenue de la Justice",
+          "addressLocality": "Paris",
+          "postalCode": "75008",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "48.8566",
+          "longitude": "2.3522"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Paris"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services juridiques",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Droit pénal international",
+                "description": "Défense en matière de droit pénal international et compétence universelle"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Droits humains",
+                "description": "Défense devant la Cour européenne des droits de l'homme et instances internationales"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Droit d'asile",
+                "description": "Accompagnement des demandeurs d'asile et réfugiés"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.jb-avocate.fr/#website",
+        "url": "https://www.jb-avocate.fr",
+        "name": "Julia Basile - Avocate",
+        "description": "Site officiel de Julia Basile, avocate spécialisée en droit pénal international et droits humains",
+        "publisher": {
+          "@id": "https://www.jb-avocate.fr/#attorney"
+        },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header avec logo à gauche et menu à droite -->
+  <header id="header">
+    <div class="container-full">
+      <div class="header-content">
+        <div class="logo">
+          <a href="#hero">
+            <img src="assets/img/Julia_Basile_logo.png" alt="JB Avocate" class="logo-img">
+          </a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="#cabinet">Le cabinet</a></li>
+            <li><a href="#expertises">Expertises</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section Hero - Plein écran avec fond -->
+    <section id="hero" class="hero-fullscreen">
+      <div class="hero-overlay"></div>
+      <div class="hero-shape-1"></div>
+      <div class="hero-shape-2"></div>
+      <div class="hero-sidebar-left"></div>
+      <div class="hero-sidebar-right"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-name">Julia Basile</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="letter">A</span><span class="letter">V</span><span class="letter">O</span><span class="letter">C</span><span class="letter">A</span><span class="letter">T</span><span class="letter">E</span>
+        </p>
+        <p class="hero-tagline">Droit pénal international • Droits humains • Compétence universelle</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-hero-primary">Prendre rendez-vous</a>
+          <a href="#expertises" class="btn-hero-secondary">Nos expertises</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Le Cabinet - Texte à gauche, photo à droite -->
+    <section id="cabinet" class="section-split">
+      <div class="container-full">
+        <div class="split-layout">
+          <div class="split-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Le cabinet</h2>
+            <p><strong>Julia Basile est avocate au barreau de Paris depuis 2021.</strong></p>
+            <p>Depuis plus de dix ans, elle construit un parcours à la croisée des droits humains, du droit pénal et de la diplomatie, animée par une curiosité profonde pour l'international et par le désir de comprendre l'autre.</p>
+            <p>Formée en France, au Canada et en Suisse, elle est diplômée de l'Université Panthéon-Assas, de l'Université de Montréal et de l'Institut des Hautes Études Internationales et du Développement (Genève), au cœur du système onusien, où elle s'est spécialisée en droit international public, droit pénal international et droits humains. Elle est également titulaire d'un certificat en sciences criminelles délivré par l'Institut de Criminologie de Paris.</p>
+            <p>De la Cour pénale internationale au Ministère de l'Europe et des Affaires étrangères, en passant par des ONG internationales engagées dans la défense des droits humains, Julia Basile met au service de chaque dossier une expertise forgée au cœur des institutions judiciaires et diplomatiques internationales, alliant rigueur, stratégie et sens humain.</p>
+            <p>Aujourd'hui, elle accompagne des particuliers, des entreprises, des ONG, des institutions et des États dans des affaires en droit pénal international, en droits humains et dans des contentieux transnationaux ou de compétence universelle.</p>
+            <p>Elle intervient également en contentieux pénal, à tous les stades de la procédure, en matière correctionnelle et criminelle, ainsi qu'en droit d'asile, offrant à ses clients une défense rigoureuse et une approche transversale des enjeux juridiques.</p>
+            <p>Forte de son expérience internationale, elle conçoit des stratégies croisées, articulant les recours internes, européens et internationaux – de la juridiction française à la Cour européenne des droits de l'homme, jusqu'à la Cour pénale internationale, la Cour internationale de Justice et aux mécanismes onusiens, qu'elle maîtrise avec une pratique confirmée des saisines d'experts.</p>
+            <p>Entre Genève, Paris, La Haye et Montréal, Julia Basile a développé un réseau d'experts qu'elle mobilise dans le cadre d'une pratique à la fois rigoureuse, engagée et humaine.</p>
+          </div>
+          <div class="split-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <img src="assets/img/julia-portrait.png" alt="Julia Basile - Avocate">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Expertises - Accordéon vertical avec images -->
+    <section id="expertises" class="section-expertises">
+      <div class="container-full">
+        <h2 class="section-title-center" data-aos="fade-up" data-aos-duration="800">Expertises</h2>
+
+        <div class="accordion-vertical">
+          <!-- Expertise 1 -->
+          <div class="accordion-item-vertical">
+            <button class="accordion-btn">
+              <span>Droit pénal international et Droit international humanitaire</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-content">
+                <div class="accordion-image">
+                  <img src="assets/img/expertise-penal.png" alt="Droit pénal international">
+                </div>
+                <div class="accordion-text">
+                  <p>Julia Basile intervient dans les affaires relevant du droit pénal international, du droit international humanitaire et de la justice transitionnelle.</p>
+                  <p>Elle accompagne ses clients devant les juridictions nationales et internationales, dans les procédures d'enquête, de poursuite et de jugement pour crimes de guerre, crimes contre l'humanité, génocide et torture.</p>
+                  <p>Elle conseille également les victimes et les États dans les mécanismes de justice transitionnelle, les commissions vérité et réconciliation, et les processus de responsabilisation des auteurs.</p>
+                  <p>Son expertise s'étend aux questions de compétence universelle, d'entraide pénale internationale et de coopération judiciaire.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expertise 2 -->
+          <div class="accordion-item-vertical">
+            <button class="accordion-btn">
+              <span>Compétence universelle</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-content">
+                <div class="accordion-image">
+                  <img src="assets/img/expertise-universelle.png" alt="Compétence universelle">
+                </div>
+                <div class="accordion-text">
+                  <p>La compétence universelle permet aux juridictions nationales de juger les auteurs de crimes internationaux, indépendamment du lieu de commission des faits et de la nationalité des auteurs ou des victimes.</p>
+                  <p>Julia Basile assiste les victimes et leurs conseils dans le dépôt de plaintes avec constitution de partie civile en France et à l'étranger.</p>
+                  <p>Elle intervient également en défense dans les procédures engagées sur le fondement de la compétence universelle.</p>
+                  <p>Son expérience internationale lui permet d'appréhender les enjeux politiques, diplomatiques et juridiques de ces dossiers complexes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expertise 3 -->
+          <div class="accordion-item-vertical">
+            <button class="accordion-btn">
+              <span>Droits humains et Droit international public</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-content">
+                <div class="accordion-image">
+                  <img src="assets/img/expertise-droits-humains.jpg" alt="Droits humains">
+                </div>
+                <div class="accordion-text">
+                  <p>Julia Basile défend les droits fondamentaux devant les juridictions nationales, européennes et internationales.</p>
+                  <p>Elle accompagne ses clients dans les recours devant la Cour européenne des droits de l'homme, les organes de traités des Nations Unies et les mécanismes de protection régionaux.</p>
+                  <p>Elle conseille également les ONG, les institutions et les États dans l'élaboration et la mise en œuvre de politiques publiques respectueuses des droits humains.</p>
+                  <p>Son expertise couvre l'ensemble des droits civils, politiques, économiques, sociaux et culturels.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expertise 4 -->
+          <div class="accordion-item-vertical">
+            <button class="accordion-btn">
+              <span>Droit pénal général et Procédure pénale</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-content">
+                <div class="accordion-image">
+                  <img src="assets/img/expertise-penal-general.jpg" alt="Droit pénal général">
+                </div>
+                <div class="accordion-text">
+                  <p>Julia Basile intervient à tous les stades de la procédure pénale : garde à vue, instruction, jugement et appel.</p>
+                  <p>Elle assure la défense de ses clients en matière correctionnelle et criminelle, dans les dossiers de violences, d'atteintes aux biens, d'infractions économiques et financières.</p>
+                  <p>Elle accompagne également les victimes dans l'exercice de leurs droits et la constitution de partie civile.</p>
+                  <p>Son approche allie rigueur juridique, sens tactique et humanité.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expertise 5 -->
+          <div class="accordion-item-vertical">
+            <button class="accordion-btn">
+              <span>Droit d'asile et Protection internationale</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-content">
+                <div class="accordion-image">
+                  <img src="assets/img/expertise-asile.jpg" alt="Droit d'asile">
+                </div>
+                <div class="accordion-text">
+                  <p>Julia Basile accompagne les demandeurs d'asile dans leurs démarches devant l'OFPRA et la Cour nationale du droit d'asile (CNDA).</p>
+                  <p>Elle intervient dans les procédures de première demande, de réexamen et de recours contentieux.</p>
+                  <p>Son expertise en droit international humanitaire et en droits humains lui permet d'appréhender les situations de persécution dans leur contexte géopolitique.</p>
+                  <p>Elle défend les personnes fuyant les conflits armés, les régimes autoritaires et les violations graves des droits fondamentaux.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="actualites" class="section-actualites">
+      <div class="container-full">
+        <h2 class="section-title-center" data-aos="fade-up" data-aos-duration="800">Actualités</h2>
+
+        <div class="actualites-grid">
+          <!-- Article 1 - Vanity Fair -->
+          <article class="actualite-card" data-aos="fade-up" data-aos-duration="800">
+            <span class="actualite-badge badge-penal">Droit pénal</span>
+            <div class="actualite-source">VANITY FAIR France</div>
+            <h3 class="actualite-title">« Le quotidien de Ridouan Taghi, le prisonnier le plus surveillé d'Europe »</h3>
+            <div class="actualite-excerpt">
+              <p>« Quelle que soit la raison pour laquelle les Hommes sont poursuivis et/ou condamnés en Europe, ils ont encore droit au respect de leur dignité humaine. C'est la garantie de vivre dans des États de droit. C'est la garantie de ne pas être torturé ni physiquement ni psychiquement. Et là, on est loin du compte. »</p>
+              <p>L'avocate s'appuie notamment sur un rapport de 2017 établi par l'association Open Society Foundation, co-écrit avec Amnesty International et portant sur la situation carcérale aux Pays-Bas, notamment dans les prisons de haute sécurité, dont Vught.</p>
+              <p>« Ils dépeignent vraiment ce qu'on déplore, insiste sa collaboratrice Me Julia Basile. Et dans le cas de M. Taghi, tout est poussé à son extrême ».</p>
+            </div>
+            <a href="#" class="actualite-link" target="_blank" rel="noopener noreferrer">
+              Lire l'article →
+            </a>
+          </article>
+
+          <!-- Article 2 - Exemple -->
+          <article class="actualite-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <span class="actualite-badge badge-international">Droit international</span>
+            <div class="actualite-source">Le Monde</div>
+            <h3 class="actualite-title">Droit pénal international : les enjeux de la compétence universelle</h3>
+            <div class="actualite-excerpt">
+              <p>La compétence universelle permet aux juridictions nationales de juger les auteurs de crimes internationaux, indépendamment du lieu de commission des faits.</p>
+              <p>Julia Basile intervient régulièrement dans ce type de procédures complexes qui nécessitent une expertise pointue en droit international.</p>
+            </div>
+            <a href="#" class="actualite-link" target="_blank" rel="noopener noreferrer">
+              Lire l'article →
+            </a>
+          </article>
+
+          <!-- Article 3 - Exemple -->
+          <article class="actualite-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <span class="actualite-badge badge-humains">Droits humains</span>
+            <div class="actualite-source">Libération</div>
+            <h3 class="actualite-title">Droits humains : l'importance de la défense devant les instances internationales</h3>
+            <div class="actualite-excerpt">
+              <p>De la Cour européenne des droits de l'homme aux mécanismes onusiens, la défense des droits fondamentaux nécessite une connaissance approfondie des instances internationales.</p>
+              <p>Une expertise que Julia Basile a développée au fil de son parcours international.</p>
+            </div>
+            <a href="#" class="actualite-link" target="_blank" rel="noopener noreferrer">
+              Lire l'article →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact">
+      <div class="container-full">
+        <h2>Contact</h2>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Adresse</h3>
+              <p><a href="https://maps.google.com/?q=123+Avenue+de+la+Justice+75008+Paris" target="_blank" rel="noopener noreferrer">123 Avenue de la Justice<br>75008 Paris, France</a></p>
+            </div>
+            <div class="contact-item">
+              <h3>Téléphone</h3>
+              <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+            </div>
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p><a href="mailto:contact@jb-avocate.fr">contact@jb-avocate.fr</a></p>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Téléphone">
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section class="section-map">
+      <div id="map"></div>
+    </section>
+
+    <!-- Section Réseaux Sociaux -->
+    <section class="section-social">
+      <div class="container-full">
+        <h2>Suivez-nous</h2>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/julia-basile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/juliabasile" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>Twitter</span>
+          </a>
+          <a href="mailto:contact@jb-avocate.fr" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-full">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="assets/img/Julia_Basile_logo.png" alt="Julia Basile Logo" class="footer-logo-img">
+          <p class="footer-tagline">Défendre vos droits avec expertise et engagement</p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3>Coordonnées</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Avenue de la Justice<br>75008 Paris, France</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contact@jb-avocate.fr">contact@jb-avocate.fr</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="#cabinet">Le cabinet</a></li>
+              <li><a href="#expertises">Expertises</a></li>
+              <li><a href="#actualites">Actualités</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Informations légales</h3>
+            <ul>
+              <li><a href="#mentions-legales">Mentions légales</a></li>
+              <li><a href="#politique-confidentialite">Politique de confidentialité</a></li>
+              <li><a href="#cgv">Conditions générales</a></li>
+              <li><a href="#cookies">Gestion des cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Julia Basile - Avocate. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS pour la carte -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- AOS - Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- GSAP pour animations avancées -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

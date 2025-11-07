@@ -1,0 +1,36 @@
+# robots.txt pour Julia Basile - Avocate
+# https://www.jb-avocate.fr/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.jb-avocate.fr/sitemap.xml
+
+# Crawl-delay (optionnel, pour éviter la surcharge)
+Crawl-delay: 1
+
+# Bloquer l'accès aux fichiers sensibles
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# Autoriser les images pour Google Images
+Allow: /assets/img/
+
+# Règles spécifiques pour les principaux bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/img/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
