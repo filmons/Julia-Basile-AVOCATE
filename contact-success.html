@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message envoyé - Julia Basile Avocate</title>
+  <link rel="icon" type="image/png" href="assets/img/Julia_Basile_logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #6BA4D6 0%, #D5E8F7 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .success-container {
+      background: white;
+      border-radius: 16px;
+      padding: 3rem;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      animation: slideUp 0.6s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #6BA4D6 0%, #5A92C4 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      animation: scaleIn 0.5s ease-out 0.3s backwards;
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .success-icon svg {
+      width: 50px;
+      height: 50px;
+      stroke: white;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: drawCheck 0.8s ease-out 0.6s forwards;
+    }
+
+    @keyframes drawCheck {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #2C3E50;
+      margin-bottom: 1rem;
+      font-family: Georgia, serif;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #7F8C8D;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(135deg, #6BA4D6 0%, #5A92C4 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(107, 164, 214, 0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(107, 164, 214, 0.4);
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #E8E8E8;
+      font-size: 0.95rem;
+      color: #7F8C8D;
+    }
+
+    .contact-info a {
+      color: #6BA4D6;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .success-container {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-icon">
+      <svg viewBox="0 0 52 52">
+        <polyline points="14,27 22,35 38,19"/>
+      </svg>
+    </div>
+
+    <h1>Message envoyé avec succès!</h1>
+
+    <p>
+      Merci pour votre message. Julia Basile vous répondra dans les plus brefs délais,
+      généralement sous 24 à 48 heures ouvrables.
+    </p>
+
+    <a href="/" class="btn">Retour à l'accueil</a>
+
+    <div class="contact-info">
+      <p>
+        <strong>Besoin urgent?</strong><br>
+        Téléphone: <a href="tel:+33629508866">+33 6 29 50 88 66</a><br>
+        Email: <a href="mailto:juliabasile.avocat@gmail.com">juliabasile.avocat@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Redirection automatique après 10 secondes (optionnel)
+    setTimeout(() => {
+      // Décommenté si vous voulez une redirection automatique
+      // window.location.href = '/';
+    }, 10000);
+  </script>
+</body>
+</html>

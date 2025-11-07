@@ -7,7 +7,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.jb-avocate.fr/</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Section Cabinet -->
   <url>
     <loc>https://www.jb-avocate.fr/#cabinet</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -23,7 +23,7 @@
   <!-- Section Expertises -->
   <url>
     <loc>https://www.jb-avocate.fr/#expertises</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -31,7 +31,7 @@
   <!-- Section Actualités -->
   <url>
     <loc>https://www.jb-avocate.fr/#actualites</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -39,36 +39,44 @@
   <!-- Section Contact -->
   <url>
     <loc>https://www.jb-avocate.fr/#contact</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Page de confirmation contact -->
+  <url>
+    <loc>https://www.jb-avocate.fr/contact-success.html</loc>
+    <lastmod>2025-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <!-- Pages légales (à créer plus tard) -->
   <url>
     <loc>https://www.jb-avocate.fr/#mentions-legales</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.jb-avocate.fr/#politique-confidentialite</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.jb-avocate.fr/#cgv</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.jb-avocate.fr/#cookies</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-11-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
