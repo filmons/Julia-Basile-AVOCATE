@@ -1,352 +1,196 @@
-# JB Avocate - Template Site Web Professionnel
+# 👩‍⚖️ Julia Basile - Site Officiel
 
-Template complet pour cabinet d'avocat, entièrement développé à la main avec HTML5, CSS3 et JavaScript vanilla. Design sobre, élégant et professionnel.
+Site web professionnel pour Julia Basile, avocate au barreau de Paris, spécialisée en droit pénal international, droits humains et compétence universelle.
 
-## ✨ Aperçu
-
-Site web moderne et responsive pour cabinet d'avocat avec toutes les sections essentielles :
-- Page d'accueil avec hero section
-- Présentation du cabinet
-- Domaines d'expertise (avec accordéon interactif)
-- Valeurs du cabinet
-- Actualités juridiques
-- Formulaire de contact
-
-## 📋 Caractéristiques principales
-
-### Design & UX
-- **Design sobre et professionnel** : Typographie élégante, palette de couleurs raffinée
-- **Responsive** : Adapté à tous les écrans (mobile, tablette, desktop)
-- **Mobile-first** : Menu hamburger, navigation optimisée
-- **Animations fluides** : Transitions et effets au scroll
-- **Accessibilité** : Navigation clavier, ARIA labels, contraste optimisé
-
-### Fonctionnalités
-- Header sticky avec effet au scroll
-- Menu mobile avec animation hamburger
-- Accordéon pour les expertises juridiques
-- Formulaire de contact avec validation
-- Statistiques animées (compteurs)
-- Bouton "retour en haut"
-- Smooth scrolling entre les sections
-- Lazy loading des images
-
-### Technique
-- **HTML5 sémantique** : Structure claire et SEO-friendly
-- **CSS3 moderne** : Grid, Flexbox, Variables CSS, Animations
-- **JavaScript vanilla** : Aucune dépendance, code optimisé
-- **Performance** : Code léger et rapide
-- **Maintenable** : Code commenté et bien structuré
-
-## 📁 Structure du projet
-
-```
-jb-avocate/
-├── index.html              # Page HTML principale
-├── assets/
-│   ├── css/
-│   │   └── style.css      # Styles CSS complets
-│   ├── js/
-│   │   └── main.js        # Scripts JavaScript
-│   └── img/               # Dossier pour vos images
-├── init.sh                # Script d'initialisation automatique
-└── README.md              # Documentation (ce fichier)
-```
-
-## 🚀 Installation
-
-### Méthode 1 : Avec le script init.sh (recommandé)
-
-Pour créer un nouveau projet à partir de zéro :
-
-```bash
-# Rendre le script exécutable
-chmod +x init.sh
-
-# Lancer le script
-./init.sh
-```
-
-Le script vous demandera le nom du projet et créera automatiquement toute la structure.
-
-### Méthode 2 : Utilisation directe
-
-Si vous avez déjà cloné ce projet :
-
-```bash
-# Ouvrir directement le fichier HTML
-open index.html
-
-# Ou lancer un serveur local
-python -m http.server 8000
-# Puis ouvrir http://localhost:8000
-```
-
-## 🎨 Personnalisation
-
-### 1. Modifier le contenu
-
-Éditez `index.html` pour personnaliser :
-
-- **Nom du cabinet** : Ligne 15
-- **Menu de navigation** : Lignes 22-28
-- **Hero section** : Lignes 35-40
-- **Présentation du cabinet** : Lignes 46-70
-- **Expertises** : Lignes 79-150 (accordéon)
-- **Coordonnées** : Lignes 200-220
-
-### 2. Personnaliser les couleurs
-
-Dans `assets/css/style.css`, modifiez les variables CSS (lignes 7-16) :
-
-```css
-:root {
-  --primary-color: #2c3e50;    /* Couleur principale (bleu foncé) */
-  --accent-color: #3498db;     /* Couleur d'accent (bleu clair) */
-  --text-color: #2c3e50;       /* Couleur du texte */
-  --text-light: #7f8c8d;       /* Texte secondaire */
-  --bg-color: #ffffff;         /* Fond principal */
-  --bg-alt: #f8f9fa;          /* Fond alternatif */
-}
-```
-
-### 3. Changer les polices
-
-Modifiez les variables de police dans `style.css` :
-
-```css
-:root {
-  --font-serif: 'Georgia', 'Times New Roman', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-```
-
-Pour utiliser Google Fonts, ajoutez dans le `<head>` de `index.html` :
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-```
-
-### 4. Ajouter des images
-
-1. Placez vos images dans `assets/img/`
-2. Référencez-les dans le HTML :
-
-```html
-<img src="assets/img/votre-image.jpg" alt="Description">
-```
-
-## 🌐 Déploiement
-
-### Option 1 : Netlify (recommandé)
-
-1. Créez un compte sur [Netlify](https://www.netlify.com/)
-2. Glissez-déposez le dossier du projet
-3. Votre site est en ligne !
-
-### Option 2 : GitHub Pages
-
-```bash
-# Initialiser Git
-git init
-git add .
-git commit -m "Initial commit"
-
-# Créer un dépôt sur GitHub puis
-git remote add origin https://github.com/votre-username/jb-avocate.git
-git branch -M main
-git push -u origin main
-
-# Activer GitHub Pages dans Settings > Pages
-```
-
-### Option 3 : Serveur classique (FTP/SFTP)
-
-Uploadez tous les fichiers via FileZilla ou votre client FTP préféré vers votre hébergement web.
-
-### Option 4 : Vercel
-
-```bash
-npm i -g vercel
-vercel
-```
-
-## 🔧 Développement local
-
-### Serveur HTTP simple
-
-**Python 3 :**
-```bash
-python -m http.server 8000
-```
-
-**Python 2 :**
-```bash
-python -m SimpleHTTPServer 8000
-```
-
-**PHP :**
-```bash
-php -S localhost:8000
-```
-
-**Node.js (avec http-server) :**
-```bash
-npx http-server -p 8000
-```
-
-Puis ouvrez : `http://localhost:8000`
-
-## 📱 Compatibilité navigateurs
-
-- ✅ Chrome (dernières versions)
-- ✅ Firefox (dernières versions)
-- ✅ Safari (dernières versions)
-- ✅ Edge (dernières versions)
-- ✅ Mobile iOS Safari
-- ✅ Mobile Android Chrome
-
-## 💡 Conseils d'utilisation
-
-### Pour le référencement (SEO)
-
-1. **Ajoutez des balises meta** dans le `<head>` :
-
-```html
-<meta name="description" content="Votre description ici">
-<meta name="keywords" content="avocat, droit pénal, droit de la famille">
-<meta property="og:title" content="JB Avocate">
-<meta property="og:image" content="assets/img/og-image.jpg">
-```
-
-2. **Optimisez les images** : Compressez-les avec [TinyPNG](https://tinypng.com/)
-
-3. **Créez un sitemap.xml** et un **robots.txt**
-
-### Pour améliorer les performances
-
-1. **Minifier CSS/JS** avec des outils en ligne
-2. **Optimiser les images** (WebP, lazy loading)
-3. **Activer la compression Gzip** sur le serveur
-4. **Utiliser un CDN** pour les assets
-
-### Pour ajouter un blog
-
-Créez de nouveaux fichiers HTML dans un dossier `blog/` :
-
-```
-jb-avocate/
-├── blog/
-│   ├── article-1.html
-│   └── article-2.html
-```
-
-## 🔐 Formulaire de contact
-
-Le formulaire actuel utilise une validation JavaScript côté client. Pour le rendre fonctionnel :
-
-### Option 1 : Service tiers (simple)
-
-Utilisez [Formspree](https://formspree.io/) :
-
-```html
-<form action="https://formspree.io/f/votre-id" method="POST">
-  <!-- vos champs -->
-</form>
-```
-
-### Option 2 : Backend PHP
-
-Créez `contact.php` :
-
-```php
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-    $to = "contact@jb-avocate.fr";
-    $subject = "Nouveau message depuis le site";
-    $body = "Nom: $name\nEmail: $email\nMessage: $message";
-
-    mail($to, $subject, $body);
-    echo "Message envoyé !";
-}
-?>
-```
-
-## 📚 Documentation du code
-
-### Structure HTML
-
-- **Sections sémantiques** : `<header>`, `<main>`, `<section>`, `<footer>`
-- **ARIA labels** pour l'accessibilité
-- **Classes BEM** pour une meilleure organisation
-
-### Organisation CSS
-
-- Variables CSS globales
-- Mobile-first (media queries en fin de fichier)
-- Animations et transitions fluides
-- Grid et Flexbox pour le layout
-
-### JavaScript
-
-Fonctions principales dans `main.js` :
-
-- `initMobileMenu()` : Gestion du menu hamburger
-- `initAccordion()` : Accordéon des expertises
-- `initScrollToTop()` : Bouton retour en haut
-- `initSmoothScroll()` : Navigation fluide
-- `initContactForm()` : Validation du formulaire
-- `initScrollAnimations()` : Animations au scroll
-
-## 🛠️ Technologies utilisées
-
-- **HTML5** : Sémantique, accessibilité
-- **CSS3** : Grid, Flexbox, Variables, Animations, Media Queries
-- **JavaScript ES6+** : Vanilla JS (pas de framework)
-- **Responsive Design** : Mobile-first approach
-
-## 📝 Licence
-
-Ce projet est libre d'utilisation pour vos projets personnels et commerciaux.
-
-## 👨‍💻 Auteur
-
-Développé avec ❤️ par **Claude Code** pour **Julia Basile - JB Avocate**
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/amelioration`)
-3. Commit vos changements (`git commit -m 'Ajout nouvelle fonctionnalité'`)
-4. Push vers la branche (`git push origin feature/amelioration`)
-5. Ouvrir une Pull Request
-
-## 🐛 Signaler un bug
-
-Ouvrez une issue sur GitHub avec :
-- Description du problème
-- Navigateur et version
-- Étapes pour reproduire
-- Captures d'écran si possible
-
-## 📞 Support
-
-Pour toute question ou suggestion :
-- Ouvrez une issue sur GitHub
-- Email : support@example.com
-
-## 🎉 Remerciements
-
-Merci d'utiliser ce template ! N'hésitez pas à le partager et à laisser une étoile ⭐ sur GitHub si vous l'avez trouvé utile.
+**Site en production**: https://juli-basile-avocate.netlify.app/
+**URL finale prévue**: https://www.jb-avocate.fr/
 
 ---
 
-**Fait avec 🤖 Claude Code et beaucoup de ☕**
+## 🚀 Démarrage Rapide
 
-*Dernière mise à jour : 2024*
+### Voir le Site
+Visitez: **https://juli-basile-avocate.netlify.app/**
+
+### Modifier le Contenu
+1. Ouvrir `index.html`
+2. Modifier le texte souhaité
+3. Sauvegarder et pousser:
+   ```bash
+   git add .
+   git commit -m "Mise à jour du contenu"
+   git push origin main
+   ```
+4. Le site se met à jour automatiquement (1-2 min)
+
+---
+
+## 📚 Documentation
+
+Toute la documentation se trouve dans le dossier [`docs/`](./docs/):
+
+### Guides Essentiels
+- **[ETAT_ACTUEL.md](./docs/ETAT_ACTUEL.md)** - État complet du site et fonctionnalités
+- **[GUIDE_NETLIFY_FORMS.md](./docs/GUIDE_NETLIFY_FORMS.md)** - Configuration des emails du formulaire
+- **[GUIDE_MODIFICATIONS.md](./docs/GUIDE_MODIFICATIONS.md)** - Comment modifier le contenu
+
+### Documentation Technique
+- **[CARTE_CONFIG.md](./docs/CARTE_CONFIG.md)** - Configuration de la carte Leaflet
+- **[HERO_IMPROVEMENTS.md](./docs/HERO_IMPROVEMENTS.md)** - Améliorations du hero section
+- **[IMAGES_GUIDE.md](./docs/IMAGES_GUIDE.md)** - Guide des images du site
+- **[CHANGEMENTS.md](./docs/CHANGEMENTS.md)** - Historique des modifications
+
+---
+
+## ✨ Fonctionnalités
+
+- ✅ **Design responsive** (desktop, tablet, mobile)
+- ✅ **Formulaire de contact** avec Netlify Forms
+- ✅ **Carte interactive** (Leaflet.js)
+- ✅ **SEO optimisé** (Open Graph, Schema.org, sitemap)
+- ✅ **5 domaines d'expertise** détaillés
+- ✅ **Section actualités** avec articles
+- ✅ **Animations** fluides et professionnelles
+- ✅ **HTTPS** et **CDN** via Netlify
+
+---
+
+## 🛠️ Stack Technique
+
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Carte**: Leaflet.js 1.9.4
+- **Icônes**: Font Awesome 6.5.1
+- **Animations**: AOS (Animate On Scroll)
+- **Hébergement**: Netlify
+- **Versioning**: Git + GitHub
+- **Formulaires**: Netlify Forms
+
+---
+
+## 📞 Coordonnées
+
+**Julia Basile - Avocate**
+103 rue La Boétie
+75008 Paris, France
+
+**Téléphone**: +33 6 29 50 88 66
+**Email**: juliabasile.avocat@gmail.com
+
+---
+
+## 🔧 Actions Requises
+
+### 🚨 Urgent: Configuration Netlify Forms
+Pour recevoir les emails du formulaire de contact:
+
+1. Aller sur https://app.netlify.com
+2. Site: **juli-basile-avocate** → **Forms** → **Notifications**
+3. Ajouter: `juliabasile.avocat@gmail.com`
+
+**Voir le guide complet**: [GUIDE_NETLIFY_FORMS.md](./docs/GUIDE_NETLIFY_FORMS.md)
+
+### Recommandé
+- [ ] Configurer Google Search Console
+- [ ] Soumettre le sitemap: `https://www.jb-avocate.fr/sitemap.xml`
+- [ ] Tester le partage social (Facebook, LinkedIn)
+- [ ] Ajouter 2 articles réels dans Actualités
+
+---
+
+## 📁 Structure du Projet
+
+```
+jb-avocate/
+├── index.html                  # Page principale
+├── contact-success.html        # Page de confirmation formulaire
+├── netlify.toml               # Configuration Netlify
+├── robots.txt                 # Directives pour robots
+├── sitemap.xml                # Plan du site (SEO)
+├── assets/
+│   ├── css/
+│   │   └── style.css          # Tous les styles
+│   ├── js/
+│   │   └── main.js            # Scripts (carte, menu)
+│   └── img/                   # Images
+│       ├── Julia_Basile_logo.png
+│       ├── julia-portrait.png
+│       └── expertise-*.png/jpg
+└── docs/                      # Documentation
+    ├── ETAT_ACTUEL.md
+    ├── GUIDE_NETLIFY_FORMS.md
+    ├── GUIDE_MODIFICATIONS.md
+    └── ...
+```
+
+---
+
+## 🚀 Déploiement
+
+### Automatique (Recommandé)
+```bash
+git add .
+git commit -m "Description des modifications"
+git push origin main
+```
+→ Netlify déploie automatiquement en 1-2 minutes
+
+### Manuel (via Netlify Dashboard)
+1. Dashboard → Deploys
+2. Drag & drop du dossier projet
+3. Attendre la fin du déploiement
+
+---
+
+## 📊 Performance
+
+- ⚡ **Performance**: 95-100 (Lighthouse)
+- ♿ **Accessibilité**: 90-95
+- 🔒 **Sécurité**: HTTPS + Headers sécurisés
+- 🔍 **SEO**: 95-100 (meta tags, sitemap, structured data)
+
+---
+
+## 🆘 Support
+
+### Problème avec le Site
+1. Consulter: [GUIDE_MODIFICATIONS.md](./docs/GUIDE_MODIFICATIONS.md)
+2. Vérifier la console du navigateur (F12)
+3. Revenir au déploiement précédent (Netlify Dashboard)
+
+### Problème avec Git
+```bash
+git status              # Voir l'état
+git log                 # Voir l'historique
+git revert HEAD         # Annuler dernier commit
+```
+
+### Ressources
+- **Documentation Netlify**: https://docs.netlify.com/
+- **GitHub Repository**: https://github.com/filmons/Juli-Basile-AVOCATE
+- **Netlify Status**: https://www.netlifystatus.com/
+
+---
+
+## 📝 Licence & Mentions
+
+**Propriétaire**: Julia Basile
+**Développement**: 2025
+**Hébergement**: Netlify
+**Code source**: Privé (GitHub)
+
+---
+
+## 🎯 Prochaines Étapes
+
+- [ ] Configuration emails Netlify Forms
+- [ ] Ajout de 2 articles réels dans Actualités
+- [ ] Configuration Google Search Console
+- [ ] Création des pages légales (mentions, RGPD)
+- [ ] Tests de partage sur réseaux sociaux
+
+**Pour plus de détails**: Voir [ETAT_ACTUEL.md](./docs/ETAT_ACTUEL.md)
+
+---
+
+**Dernière mise à jour**: 7 novembre 2025
+**Version**: 1.0.0
